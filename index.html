@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para Deyanira</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Pantalla de bienvenida para forzar el inicio de la música */
+#welcome-overlay {
+  position: fixed;
+  inset: 0;
+  background: #fdfbf7;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+
+#welcome-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.welcome-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  max-width: 360px;
+  width: 100%;
+}
+
+.welcome-box h2 {
+  font-family: inherit;
+  color: #8b4553;
+  margin-bottom: 10px;
+}
+
+.welcome-box p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+#start-btn {
+  background: #8b4553;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(139, 69, 83, 0.3);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#start-btn:hover {
+  transform: scale(1.03);
+  background: #723743;
+}
+
+/* Ocultamos completamente el reproductor visual de la página */
+.music-player {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Pantalla de bienvenida que desbloquea el audio -->
+<div id="welcome-overlay">
+  <div class="welcome-box">
+    <h2>Para Deyanira</h2>
+    <p>Haz clic para abrir esta sorpresa 💌</p>
+    <button id="start-btn">Entrar</button>
+  </div>
+</div>
+
+<main>
+<header>
+<h1>Para Deyanira</h1>
+<p>Para la mujer que me hizo dejar de ser fack boy y hacer que me alegre el dia con un mensaje suyo &ldquo;&#129325;&rdquo;</p>
+</header>
+
+<!-- Reproductor oculto pero funcional -->
+<div class="music-player">
+  <audio id="bg-music" loop src="oficial.mp3"></audio>
+</div>
+
+<h2>La historia</h2>
+
+<div class="chap"><b>Capítulo 1 &middot; TikTok</b>
+<p>Todo empezó en TikTok, entre lives. Ella hablaba con un amigo de Axel, y un día, de la nada, empezó a hablar con él también.</p>
+<p class="q">&iquest;Te acuerdas de ese primer &ldquo;hola&rdquo;, Deyanira? &iquest;Pensaste que iba a durar una noche?</p>
+<p>No duró una noche. Duró hasta la madrugada, y después otra, y otra más.</p></div>
+
+<div class="chap"><b>Capítulo 2 &middot; La videollamada</b>
+<p>Hubo una videollamada. Axel no sabría explicarlo bien, pero fue ahí donde se dio cuenta de que ella le gustaba de verdad, no solo como un juego de lives.</p>
+<p class="q">&iquest;Lo notaste en ese momento, o te lo guardaste para ti?</p></div>
+
+<div class="chap"><b>Capítulo 3 &middot; El miedo a ir rápido</b>
+<p>El 6 de septiembre, Axel juntó valor y le dijo lo que pensaba: que ella le atraía, que no quería arruinarlo yendo tan rápido, y que prefería conocerla primero. Ella, honesta como siempre, le contestó que lo entendía, que buscaba algo serio, y que lo apreciaba por decírselo de frente.</p>
+<p class="q">&iquest;Sabes lo que Axel no dijo en voz alta ese día? Que tenía miedo de hacerlo mal con alguien que le importaba.</p></div>
+
+<div class="chap"><b>Capítulo 4 &middot; Los altibajos</b>
+<p>Vino la distancia, porque ella tenía un viaje cerca. Hubo incomodidades, celos, silencios y días en que cada uno se alejó para no sentir de más. El 14 de septiembre, Axel le escribió una lista simple: le gustaba cómo lo trataba, cómo era con él, cuando ella hablaba y su forma de pensar.</p>
+<p class="q">&iquest;Lo leíste en ese momento y te quedaste pensando, verdad?</p></div>
+
+<div class="chap"><b>Capítulo 5 &middot; Lo que ella confesó</b>
+<p>El 17 de septiembre, ella le pidió que prometiera no irse, y después le dijo algo que Axel guardó mucho tiempo: que a ella también le había gustado, y mucho, y que se había asustado por todo lo que lo rodeaba.</p>
+<p class="q">&iquest;Y si los dos tuvimos miedo al mismo tiempo, Deyanira?</p></div>
+
+<div class="chap"><b>Capítulo 6 &middot; Octubre</b>
+<p>En octubre se escribieron de nuevo. Hubo cosas difíciles, y también un sueño: Axel la vio en una playa, él recostado en su pecho, diciéndole &ldquo;te quiero&rdquo; y ella respondiéndole lo mismo. Despertó con ganas de decirle todo lo que había guardado.</p>
+<p class="q">&iquest;Te acuerdas de lo que te contó de ese sueño? Dijiste que era bonito.</p></div>
+
+<h2>La carta</h2>
+<div class="letter">
+<p>Deyanira:</p>
+<p>No sé muy bien cómo empezar, pero sí sé lo que provocas en mí. Desde que apareciste, cada día tiene un color diferente. Más de una vez llegué cansado o con el día gris, y escuchar un audio tuyo bastaba para cambiarlo todo, aunque tú ni te enteraras.</p>
+<p>Me enamoró tu forma tan sincera de ser, esa honestidad valiente con la que me hablas y cómo me haces sentir en casa con solo un mensaje. Sé que ambos tuvimos miedo y que el camino no siempre ha sido lineal, pero lo que siento por ti es real, grande y se queda aquí, latiendo sin condiciones.</p>
+<p>No te escribo para presionarte ni para exigirte nada; te escribo porque mi corazón necesitaba decirte la verdad. Eres de lo más bonito que me ha pasado, y lo único que deseo es cuidarte, hacerte sonreír y caminar a tu lado, a tu ritmo.</p>
+<p>Gracias por existir y por darle tanta luz a mis días.</p>
+</p>Gracias por calmar mis demonios y a impulsarme cada dia ser mejor </p>
+<p class="sign">Con todo mi amor,<br>Axel</p>
+</div>
+
+<h2>Ella</h2>
+<div class="gal">
+  <figure><img alt="Tu mirada" src="img/mirada.jpg"><figcaption>Esa forma de ver el mundo</figcaption></figure>
+  <figure><img alt="Tu elegancia" src="img/elegancia.jpg"><figcaption>mi super heroina</figcaption></figure>
+  <figure><img alt="Tu sonrisa de lado" src="img/sonrisa.jpg"><figcaption>Cuando te sale esa sonrisa</figcaption></figure>
+</div>
+
+<h2>Lo que me gusta de ti</h2>
+<div class="grid">
+<div class="seg"><span>&#127911;</span><h3>Tu voz</h3><p>Me encanta cómo suena, cómo cantas, cómo me hablas en tus audios.</p></div>
+<div class="seg"><span>&#128514;</span><h3>Tu risa y tu humor</h3><p>Tus &ldquo;jajajaja&rdquo;, tus apodos, lo rápido que contestas cualquier broma.</p></div>
+<div class="seg"><span>&#127799;</span><h3>Cómo me tratas</h3><p>Me gustas como me tratas y como eres conmigo. Cuidas sin hacer ruido.</p></div>
+<div class="seg"><span>&#129517;</span><h3>Tu honestidad</h3><p>Me dices las cosas claras aunque duela, y eso es de lo que más respeto de ti.</p></div>
+<div class="seg"><span>&#129504;</span><h3>Tu forma de pensar</h3><p>Me gusta cuando hablas y cómo piensas. Lo dije en septiembre y lo sigo diciendo.</p></div>
+<div class="seg"><span>&#127769;</span><h3>Tus buenas noches</h3><p>Ese besito antes de dormir que me acostumbró bien.</p></div>
+<div class="seg"><span>&#127958;&#65039;</span><h3>Cómo me haces soñar</h3><p>Una playa, tu mano en mi pelo, &ldquo;descansa&rdquo;. Fue corto y cursi, pero de lo mejor de mi semana.</p></div>
+</div>
+
+<footer>Sin presión. Sin condiciones. &#128140;</footer>
+<footer>Quiero hacerte volver a confiar en alguien &nbsp;💜</footer>
+</main>
+
+<script>
+  const startBtn = document.getElementById('start-btn');
+  const welcomeOverlay = document.getElementById('welcome-overlay');
+  const bgMusic = document.getElementById('bg-music');
+
+  startBtn.addEventListener('click', () => {
+    bgMusic.play().catch(err => console.log("Error al reproducir:", err));
+    welcomeOverlay.classList.add('fade-out');
+    setTimeout(() => {
+      welcomeOverlay.remove();
+    }, 500);
+  });
+</script>
+</body>
+</html>

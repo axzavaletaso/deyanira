@@ -1,0 +1,28 @@
+:root{--bg:#fbf4ee;--card:#fff;--ink:#3a2a2e;--soft:#7d6468;--rose:#c4506a;--line:#ecd9d4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1417;--card:#281c20;--ink:#f3e6e4;--soft:#b79ea2;--rose:#ee8aa1;--line:#3d2b31;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1c1417;--card:#281c20;--ink:#f3e6e4;--soft:#b79ea2;--rose:#ee8aa1;--line:#3d2b31;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 Georgia,"Times New Roman",serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+main{max-width:640px;margin:0 auto;padding:0 22px 60px}
+header{text-align:center;padding:72px 0 30px}
+header small{letter-spacing:.2em;text-transform:uppercase;color:var(--soft);font:12px system-ui,sans-serif}
+h1{font-size:2.5rem;margin:.3em 0 .1em;color:var(--rose);font-weight:400}
+header p{color:var(--soft);font-style:italic;margin:0}
+h2{font-weight:400;font-size:1.5rem;color:var(--rose);margin:56px 0 18px;text-align:center}
+.chap{border-left:2px solid var(--line);padding:2px 0 2px 18px;margin:0 0 30px}
+.chap b{display:block;font:600 12px system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-bottom:4px}
+.chap p{margin:0 0 .8em}
+.q{color:var(--rose);font-style:italic}
+.letter{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px 26px;box-shadow:0 8px 30px rgba(120,60,70,.08)}
+.letter p{margin:0 0 1.1em}
+.letter .sign{text-align:right;color:var(--rose);margin:1.6em 0 0;font-style:italic}
+.gal{display:grid;gap:16px}
+.gal figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.gal img{display:block;width:100%;height:auto}
+.gal figcaption{padding:10px 16px;color:var(--soft);font-style:italic;text-align:center}
+.grid{display:grid;gap:14px}
+.seg{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.seg span{font-size:1.5rem}
+.seg h3{margin:.2em 0 .3em;font-size:1.05rem;font-weight:600}
+.seg p{margin:0;color:var(--soft);font-size:.97rem;line-height:1.6}
+footer{text-align:center;color:var(--soft);font-style:italic;margin-top:56px}
